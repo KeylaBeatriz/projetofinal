@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="Formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Checklist</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+          <h1 id="titulo">NR-35  Proteção contra Queda de Altura</h1>
+            <p id="subtitulo">Inspeção de Segurança do Trabalho - Check list</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="data"><strong>Data</strong></label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="hora"><strong>Hora</strong></label>
+                <input type="hour" name="hora" id="hora" required>
+            </div>
+
+            <!-- Campo de desenvolvimento função com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Função: </strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="Admistração" checked>Administrador
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Estagiario" checked>Estagiario
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Supervisão" checked>Supervisor
+                </label>
+            </div>
+
+            <!-- Campo de setor com 3 opções para escolha (select option) e css de classe "campo" -->
+            <div class="campo">
+                <label for="Setor"><strong>Setor</strong></label>
+                <select id="Setor" required>
+                  <option selected disabled value="">Selecione</option>
+                
+                    <option>Auroras</option>
+                    <option>Madalena</option>
+                    <option>Boa Vista</option>
+                    <option>Jatobás</option>
+                    <option>Jacarandás</option>
+                    <option>Beira Rio</option>
+                    <option>Rosarinho</option>
+            
+
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de perguntas para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>01 - Todos os trabalhadores envolvidos receberam treinamento específico 
+                        para trabalho em altura?</strong></label><br><br>
+                    <input type="checkbox" id="resposta1" name="resposta1" value="SIM">
+                    <label for="resposta1"> SIM</label>
+                    <input type="checkbox" id="resposta2" name="resposta2" value="NÃO">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <!-- Campo de perguntas para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>02-  Os trabalhadores estão utilizando os EPIs corretos, como cintos de 
+                        segurança tipo paraquedista, talabartes, capacetes, luvas, etc.?</strong></label><br><br>
+                    <input type="checkbox" id="resposta1" name="resposta1" value="SIM">
+                    <label for="resposta1"> SIM</label>
+                    <input type="checkbox" id="resposta2" name="resposta2" value="NÃO">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <!-- Campo de perguntas para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>03 -  Há sistemas de proteção coletiva,como telas de proteção,
+                        guarda-corpos, e corrimãos, instalados e em bom estado de conservação?</strong></label><br><br>
+                    <input type="checkbox" id="resposta1" name="resposta1" value="SIM">
+                    <label for="resposta1"> SIM</label>
+                    <input type="checkbox" id="resposta2" name="resposta2" value="NÃO">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <!-- Campo de perguntas para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>04 -  As escadas, rampas, passarelas e outros meios de acesso estão em
+                        boas condições e devidamente fixados?</strong></label><br><br>
+                    <input type="checkbox" id="resposta1" name="resposta1" value="SIM">
+                    <label for="resposta1"> SIM</label>
+                    <input type="checkbox" id="resposta2" name="resposta2" value="NÃO">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <!-- Campo de perguntas para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>05 -   Há sinalização adequada para identificar os pontos de acesso e saída 
+                        das áreas de trabalho em altura?</strong></label><br><br>
+                    <input type="checkbox" id="resposta1" name="resposta1" value="SIM">
+                    <label for="resposta1"> SIM</label>
+                    <input type="checkbox" id="resposta2" name="resposta2" value="NÃO">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <!-- Campo de perguntas para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>06 - Os sistemas de proteção coletiva estão sendo utilizados corretamente?</strong></label><br><br>
+                    <input type="checkbox" id="resposta1" name="resposta1" value="SIM">
+                    <label for="resposta1"> SIM</label>
+                    <input type="checkbox" id="resposta2" name="resposta2" value="NÃO">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <!-- Campo de perguntas para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>07 - O supervisor está monitorando continuamente a segurança das 
+                        operações?</strong></label><br><br>
+                    <input type="checkbox" id="resposta1" name="resposta1" value="SIM">
+                    <label for="resposta1"> SIM</label>
+                    <input type="checkbox" id="resposta2" name="resposta2" value="NÃO">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <!-- Campo de perguntas para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>08 -  Há um plano de resgate definido em caso de emergência?</strong></label><br><br>
+                    <input type="checkbox" id="resposta1" name="resposta1" value="SIM">
+                    <label for="resposta1"> SIM</label>
+                    <input type="checkbox" id="resposta2" name="resposta2" value="NÃO">
+                    <label for="resposta2">NÃO</label>
+                </div>
+            </fieldset>
+            
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>OBSERVAÇÕES: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Enviar</button>            
+
+        </form>
+
+    </body>
+
+</html>
