@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-UA-Compatible" content = "IE=edge">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Gerar PDF com JavaScript</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
-    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer">
-</script>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
 </head>
 <body>
-    <div id="content">
-        
-        <h1>Olá, prevencionistas!</h1>
-        <p>Esta será sua ferramenta em PDF!</p>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br>E entre para o nosso time</h1>
+            <img src="foto.svg" class="left-login-image "alt="logo">
 
-    </div>
-    <button id="generate-pdf">Gerar PDF</button>
-</body>    
+        </div>
+
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Entrar</h1>
+                <div class="textfied">
+                    <label for ="usuario">Usuário: </label>
+                    <input type ="text" name ="usuario" placeholder="Usuário">
+                 </div>
+
+                 <div class="textfied">
+                    <label for ="senha">Senha: </label>
+                    <input type ="password" name ="senha" placeholder="senha">
+                 </div>
+
+                 <button class="btn-login">Entrar</button>
+                </div>
+
+            </div>
+         </div>
+</body>
 </html>
+
